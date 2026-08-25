@@ -88,6 +88,21 @@ plt.axis("off")
 
 plt.show()
 ```
+### Analysis of Canny Edge Detection
+
+#### Detected Edges
+
+The Canny algorithm detects the boundaries of the bird, including its wings, body, head, tail, and feathers. Some edges of the clouds are also detected, while most of the smooth sky remains black.
+
+#### Effect of Different Parameter Settings
+
+The following threshold values were tested:
+
+. 50, 150 – Detects more edges and fine details.
+. 100, 200 – Produces a balanced edge detection result.
+. 150, 250 – Detects fewer but stronger edges.
+
+Increasing the threshold values reduces the number of detected edges, while lower values detect more details and may also include unwanted edges.
 
 ## Output
 <img width="293" height="196" alt="download" src="https://github.com/user-attachments/assets/0b36b117-e6b2-43ba-aed5-4505e958734b" />
