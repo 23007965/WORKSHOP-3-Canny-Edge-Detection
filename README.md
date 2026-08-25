@@ -89,6 +89,13 @@ plt.show()
 ```
 
 ## Output
+<img width="293" height="196" alt="download" src="https://github.com/user-attachments/assets/0b36b117-e6b2-43ba-aed5-4505e958734b" />
+
+<img width="293" height="196" alt="download" src="https://github.com/user-attachments/assets/c9215b85-15e4-4591-a4ff-b37a796cbe5e" />
+
+<img width="293" height="196" alt="download" src="https://github.com/user-attachments/assets/e179c52d-e523-4aa2-991f-79b94ab7bea1" />
+
+<img width="950" height="196" alt="download" src="https://github.com/user-attachments/assets/d7223013-8d97-4e86-97ba-ad4fc7a78ee1" />
 
 ## Result
 The Canny Edge Detection algorithm was successfully implemented using Python and OpenCV. The main edges of the bird, including its wings, body, and feathers, were detected. Different threshold values produced different levels of edge details.
