@@ -15,25 +15,77 @@ To implement the Canny Edge Detection algorithm on a sample image using Python a
 
 ## Program
 ```python
+import cv2
+import matplotlib.pyplot as plt
+
+# Read the sample image
+image = cv2.imread("golden-bird.jpg")
+
+# Display results
+plt.figure(figsize=(12, 4))
+
+plt.subplot(1, 3, 1)
+plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+plt.title("Original Image")
+plt.axis("off")
 
 ```
 ```python
+# Convert to grayscale
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+# Display results
+plt.figure(figsize=(12, 4))
+
+plt.subplot(1, 3, 2)
+plt.imshow(gray, cmap="gray")
+plt.title("Grayscale Image")
+plt.axis("off")
+plt.show()
 ```
 ```python
+# Apply Gaussian Blur
+blur = cv2.GaussianBlur(gray, (5, 5), 0)
 
+# Apply Canny Edge Detection
+edges = cv2.Canny(blur, 50, 100)
+
+# Display results
+plt.figure(figsize=(12, 4))
+
+plt.subplot(1, 3, 3)
+plt.imshow(edges, cmap="gray")
+plt.title("Canny Edges")
+plt.axis("off")
+
+plt.show()
 ```
 ```python
+# Apply Canny Edge Detection using different parameters
 
-```
-```python
+edges1 = cv2.Canny(blur, 50, 150)
+edges2 = cv2.Canny(blur, 100, 200)
+edges3 = cv2.Canny(blur, 150, 250)
 
-```
-```python
+# Display all results together
+plt.figure(figsize=(12, 4))
 
-```
-```python
+plt.subplot(1, 3, 1)
+plt.imshow(edges1, cmap="gray")
+plt.title("Canny: 50, 150")
+plt.axis("off")
 
+plt.subplot(1, 3, 2)
+plt.imshow(edges2, cmap="gray")
+plt.title("Canny: 100, 200")
+plt.axis("off")
+
+plt.subplot(1, 3, 3)
+plt.imshow(edges3, cmap="gray")
+plt.title("Canny: 150, 250")
+plt.axis("off")
+
+plt.show()
 ```
 
 ## Output
