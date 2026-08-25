@@ -1,1 +1,1 @@
-# WORKSHOP-3-Canny-Edge-Detection
+# WORKSHOP3 : Canny Edge Detection
