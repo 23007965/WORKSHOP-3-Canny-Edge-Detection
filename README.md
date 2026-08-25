@@ -1,5 +1,8 @@
 # WORKSHOP 3 : Canny Edge Detection
 
+## Name : P Parthiban
+## Register number : 212223230145
+
 ## Aim
 To implement the Canny Edge Detection algorithm on a sample image using Python and OpenCV, and analyze the effect of different threshold parameters on the detected edges.
 
