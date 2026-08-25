@@ -98,9 +98,9 @@ The Canny algorithm detects the boundaries of the bird, including its wings, bod
 
 The following threshold values were tested:
 
-. 50, 150 – Detects more edges and fine details.
-. 100, 200 – Produces a balanced edge detection result.
-. 150, 250 – Detects fewer but stronger edges.
+- 50, 150 – Detects more edges and fine details.
+- 100, 200 – Produces a balanced edge detection result.
+- 150, 250 – Detects fewer but stronger edges.
 
 Increasing the threshold values reduces the number of detected edges, while lower values detect more details and may also include unwanted edges.
 
